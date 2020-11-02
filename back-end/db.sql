@@ -15,7 +15,7 @@ create table game(
 );
 create table game_mode(
     cd_id int(9) unsigned auto_increment,
-    qt_user varchar(3),
+    qt_user int(3),
     nm_mode varchar(30),
     primary key (cd_id)
 );
