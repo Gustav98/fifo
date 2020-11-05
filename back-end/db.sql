@@ -21,14 +21,14 @@ create table game_mode(
 );
 create table order_game_mode(
     cd_id_game int(9) unsigned,
-    cd_id_game_mode int(9) unsign,
+    cd_id_game_mode int(9) unsigned,
     ic_active boolean,
     foreign key (cd_id_game) references game(cd_id),
     foreign key (cd_id_game_mode) references game_mode(cd_id)
 );
 create table order_game_user(
-    cd_id_user int(9),
-    cd_id_game int(9),
+    cd_id_user int(9) unsigned,
+    cd_id_game int(9) unsigned,
     dt_begin datetime,
     dt_end datetime,
     foreign key (cd_id_user) references user(cd_id),
