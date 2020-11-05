@@ -3,8 +3,8 @@ use db_fifo;
 create table user(
     cd_id int(9) unsigned auto_increment,
     nm_name varchar(60),
-    cd_email varchar(80),
-    nm_password varchar(24),
+    cd_email varchar(45),
+    nm_password varchar(18),
     ic_admin boolean,
     primary key (cd_id)
 );
@@ -16,7 +16,7 @@ create table game(
 create table game_mode(
     cd_id int(9) unsigned auto_increment,
     qt_user int(3),
-    nm_mode varchar(30),
+    nm_mode varchar(7),
     primary key (cd_id)
 );
 create table order_game_mode(
